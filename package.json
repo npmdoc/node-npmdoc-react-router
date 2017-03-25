@@ -2,6 +2,7 @@
     "buildNpmdoc":"react-router",
     "devDependencies": {
         "react-router": "*",
+        "react": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
