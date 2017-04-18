@@ -51,7 +51,7 @@
 
         href="https://github.com/reacttraining/react-router#readme"
 
-    >react-router (v4.0.0)</a>
+    >react-router (v4.1.1)</a>
 </h1>
 <h4>Declarative routing for React</h4>
 <div class="apidocSectionDiv"><a
@@ -1484,14 +1484,22 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function withRouter(Component) {
   var C = function C(props) {
+    var wrappedComponentRef = props.wrappedComponentRef,
+        remainingProps = _objectWithoutProperties(props, [&#x27;wrappedComponentRef&#x27;]);
+
     return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
-        return _react2.default.createElement(Component, _extends({}, props, routeComponentProps));
+        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef
+ }));
       } });
   };
 
   C.displayName = &#x27;withRouter(&#x27; + (Component.displayName || Component.name) + &#x27;)&#x27;;
+  C.WrappedComponent = Component;
+  C.propTypes = {
+    wrappedComponentRef: _propTypes2.default.func
+  };
 
-  return C;
+  return (0, _hoistNonReactStatics2.default)(C, Component);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -2365,22 +2373,22 @@ Route children&#x3e; will be ignored&#x27;);
   return path ? (0, _matchPath2.default)(pathname, { path: path, strict: strict, exact: exact }) : route.match;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-_classCallCheck(this, Route);
+  _classCallCheck(this, Route);
 
-for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
-  args[_key] = arguments[_key];
-}
-
-return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
-))), _this), _this.state = {
-  match: _this.<span class="apidocCodeKeywordSpan">computeMatch</span>(_this.props, _this.context.router)
-}, _temp), _possibleConstructorReturn(_this, _ret);
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
   }
 
-  Route.prototype.getChildContext = function getChildContext() {
-var router = this.context.router;
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = {
+    match: _this.<span class="apidocCodeKeywordSpan">computeMatch</span>(_this.props, _this.context.router)
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
 
-return {
+Route.prototype.getChildContext = function getChildContext() {
+  return {
+    router: _extends({}, this.context.router, {
+      route: {
 ...</pre></li>
     </ul>
 
@@ -2394,8 +2402,6 @@ return {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function getChildContext() {
-  var router = this.context.router;
-
   return {
     router: _extends({}, this.context.router, {
       route: {
@@ -2630,22 +2636,22 @@ return {
   };
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-_classCallCheck(this, Route);
+  _classCallCheck(this, Route);
 
-for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
-  args[_key] = arguments[_key];
-}
-
-return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
-))), _this), _this.state = {
-  match: _this.<span class="apidocCodeKeywordSpan">computeMatch</span>(_this.props, _this.context.router)
-}, _temp), _possibleConstructorReturn(_this, _ret);
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &#x3c; _len; _key++) {
+    args[_key] = arguments[_key];
   }
 
-  Route.prototype.getChildContext = function getChildContext() {
-var router = this.context.router;
+  return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args
+))), _this), _this.state = {
+    match: _this.<span class="apidocCodeKeywordSpan">computeMatch</span>(_this.props, _this.context.router)
+  }, _temp), _possibleConstructorReturn(_this, _ret);
+}
 
-return {
+Route.prototype.getChildContext = function getChildContext() {
+  return {
+    router: _extends({}, this.context.router, {
+      route: {
 ...</pre></li>
     </ul>
 
@@ -2983,6 +2989,8 @@ uncontrolled (or vice versa). You provided a &#x22;location&#x22; prop initially
   var match = void 0,
       child = void 0;
   _react2.default.Children.forEach(children, function (element) {
+    if (!_react2.default.isValidElement(element)) return;
+
     var _element$props = element.props,
         pathProp = _element$props.path,
         exact = _element$props.exact,
@@ -3301,14 +3309,20 @@ uncontrolled (or vice versa). You provided a &#x22;location&#x22; prop initially
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function withRouter(Component) {
 	  var C = function C(props) {
+	    var wrappedComponentRef = props.wrappedComponentRef,
+	        remainingProps = _objectWithoutProperties(props, [&#x27;wrappedComponentRef&#x27;]);
+
 	    return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
-	        return _react2.default.createElement(Component, _extends({}, props, routeComponentProps));
+	        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef
+ }));
 	      } });
 	  };
 
 	  C.displayName = &#x27;withRouter(&#x27; + (Component.displayName || Component.name) + &#x27;)&#x27;;
+	  C.WrappedComponent = Component;
 
-	  return C;
+
+	  return (0, _hoistNonReactStatics2.default)(C, Component);
 	}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -3331,14 +3345,22 @@ uncontrolled (or vice versa). You provided a &#x22;location&#x22; prop initially
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function withRouter(Component) {
   var C = function C(props) {
+    var wrappedComponentRef = props.wrappedComponentRef,
+        remainingProps = _objectWithoutProperties(props, [&#x27;wrappedComponentRef&#x27;]);
+
     return _react2.default.createElement(_Route2.default, { render: function render(routeComponentProps) {
-        return _react2.default.createElement(Component, _extends({}, props, routeComponentProps));
+        return _react2.default.createElement(Component, _extends({}, remainingProps, routeComponentProps, { ref: wrappedComponentRef
+ }));
       } });
   };
 
   C.displayName = &#x27;withRouter(&#x27; + (Component.displayName || Component.name) + &#x27;)&#x27;;
+  C.WrappedComponent = Component;
+  C.propTypes = {
+    wrappedComponentRef: _propTypes2.default.func
+  };
 
-  return C;
+  return (0, _hoistNonReactStatics2.default)(C, Component);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>

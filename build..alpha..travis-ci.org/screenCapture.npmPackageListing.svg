@@ -1,30 +1,30 @@
 <svg height="430" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="430" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-08 05:36:16 +0000   158264 bytes  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-08 05:36:16 +0000     2500 bytes  MemoryRouter.js</tspan>
-<tspan x="10" y="58">  2.  2017-04-08 05:36:16 +0000     2777 bytes  Prompt.js</tspan>
-<tspan x="10" y="74">  3.  2017-04-08 05:36:16 +0000      968 bytes  README.md</tspan>
-<tspan x="10" y="90">  4.  2017-04-08 05:36:16 +0000     2727 bytes  Redirect.js</tspan>
-<tspan x="10" y="106">  5.  2017-04-08 05:36:16 +0000     6291 bytes  Route.js</tspan>
-<tspan x="10" y="122">  6.  2017-04-08 05:36:16 +0000     4163 bytes  Router.js</tspan>
-<tspan x="10" y="138">  7.  2017-04-08 05:36:16 +0000     6441 bytes  StaticRouter.js</tspan>
-<tspan x="10" y="154">  8.  2017-04-08 05:36:16 +0000     3344 bytes  Switch.js</tspan>
-<tspan x="10" y="170">  9.  2017-04-08 05:36:16 +0000     2098 bytes  es/MemoryRouter.js</tspan>
-<tspan x="10" y="186"> 10.  2017-04-08 05:36:16 +0000     2542 bytes  es/Prompt.js</tspan>
-<tspan x="10" y="202"> 11.  2017-04-08 05:36:16 +0000     2471 bytes  es/Redirect.js</tspan>
-<tspan x="10" y="218"> 12.  2017-04-08 05:36:16 +0000     5774 bytes  es/Route.js</tspan>
-<tspan x="10" y="234"> 13.  2017-04-08 05:36:16 +0000     3783 bytes  es/Router.js</tspan>
-<tspan x="10" y="250"> 14.  2017-04-08 05:36:16 +0000     6011 bytes  es/StaticRouter.js</tspan>
-<tspan x="10" y="266"> 15.  2017-04-08 05:36:16 +0000     2949 bytes  es/Switch.js</tspan>
-<tspan x="10" y="282"> 16.  2017-04-08 05:36:16 +0000      637 bytes  es/index.js</tspan>
-<tspan x="10" y="298"> 17.  2017-04-08 05:36:16 +0000     1881 bytes  es/matchPath.js</tspan>
-<tspan x="10" y="314"> 18.  2017-04-08 05:36:16 +0000      788 bytes  es/withRouter.js</tspan>
-<tspan x="10" y="330"> 19.  2017-04-08 05:36:16 +0000     1541 bytes  index.js</tspan>
-<tspan x="10" y="346"> 20.  2017-04-08 05:36:16 +0000     2104 bytes  matchPath.js</tspan>
-<tspan x="10" y="362"> 21.  2017-04-08 05:36:16 +0000     4155 bytes  package.json</tspan>
-<tspan x="10" y="378"> 22.  2017-04-08 05:36:16 +0000    65997 bytes  umd/react-router.js</tspan>
-<tspan x="10" y="394"> 23.  2017-04-08 05:36:16 +0000    25258 bytes  umd/react-router.min.js</tspan>
-<tspan x="10" y="410"> 24.  2017-04-08 05:36:16 +0000     1064 bytes  withRouter.js</tspan>
+<tspan x="10" y="26">  0.  2017-04-18 20:12:01 +0000   171195 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-18 20:12:01 +0000     2611 bytes  MemoryRouter.js</tspan>
+<tspan x="10" y="58">  2.  2017-04-18 20:12:01 +0000     2894 bytes  Prompt.js</tspan>
+<tspan x="10" y="74">  3.  2017-04-18 20:12:01 +0000      968 bytes  README.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-18 20:12:01 +0000     2853 bytes  Redirect.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-18 20:12:01 +0000     6393 bytes  Route.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-18 20:12:01 +0000     4271 bytes  Router.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-18 20:12:01 +0000     6555 bytes  StaticRouter.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-18 20:12:01 +0000     3513 bytes  Switch.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-18 20:12:01 +0000     2119 bytes  es/MemoryRouter.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-18 20:12:01 +0000     2563 bytes  es/Prompt.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-18 20:12:01 +0000     2492 bytes  es/Redirect.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-18 20:12:01 +0000     5756 bytes  es/Route.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-18 20:12:01 +0000     3804 bytes  es/Router.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-18 20:12:01 +0000     6032 bytes  es/StaticRouter.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-18 20:12:01 +0000     3021 bytes  es/Switch.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-18 20:12:01 +0000      637 bytes  es/index.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-18 20:12:01 +0000     1881 bytes  es/matchPath.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-18 20:12:01 +0000     1400 bytes  es/withRouter.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-18 20:12:01 +0000     1541 bytes  index.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-18 20:12:01 +0000     2104 bytes  matchPath.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-18 20:12:01 +0000     4156 bytes  package.json</tspan>
+<tspan x="10" y="378"> 22.  2017-04-18 20:12:01 +0000    74465 bytes  umd/react-router.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-18 20:12:01 +0000    27307 bytes  umd/react-router.min.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-18 20:12:01 +0000     1859 bytes  withRouter.js</tspan>
 </text>
 </svg>
