@@ -1,6 +1,6 @@
 # npmdoc-react-router
 
-#### api documentation for  [react-router (v4.1.1)](https://github.com/reacttraining/react-router#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-router.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-router) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-router.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-router)
+#### basic api documentation for  [react-router (v4.1.1)](https://github.com/reacttraining/react-router#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-router.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-router) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-router.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-router)
 
 #### Declarative routing for React
 
@@ -132,7 +132,8 @@
         "test": "karma start --single-run",
         "watch": "babel ./modules -d . --ignore __tests__ --watch"
     },
-    "version": "4.1.1"
+    "version": "4.1.1",
+    "bin": {}
 }
 ```
 
